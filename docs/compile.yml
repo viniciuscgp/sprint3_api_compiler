@@ -1,0 +1,17 @@
+Compile code
+This API call another API to compila de code and returns the result.
+---
+parameters:
+  - name: language
+    in: body
+    type: string
+    required: true
+    description: The programming language of the code
+  - name: code
+    in: body
+    type: string
+    required: true
+    description: The code to be compiled
+responses:
+  200:
+    description: Compilation result
